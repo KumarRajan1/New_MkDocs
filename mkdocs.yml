@@ -1,4 +1,5 @@
 site_name: My Docs
+site_url: https://KumarRajan1.io/New_MkDocs/
 
 theme:
   name: material
