@@ -1,14 +1,14 @@
-name: Build and Deploy MkDocs
+name: Fetch, Build and Deploy MkDocs
 
 on:
   push:
     branches:
       - main
   repository_dispatch:
-    types: [build_docs]
+    types: [build_docs]  # Triggered by the other repos
 
 permissions:
-  contents: write  # 🔑 Needed to push to gh-pages
+  contents: write
 
 jobs:
   deploy:
@@ -23,15 +23,21 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           pip install mkdocs mkdocs-material
 
-      - name: Build site
+      - name: Make fetch-docs.sh Executable
+        run: chmod +x ./fetch-docs.sh
+
+      - name: Fetch Markdown from Repos
+        run: ./fetch-docs.sh
+
+      - name: Build MkDocs Site
         run: mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
