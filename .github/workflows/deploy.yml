@@ -1,17 +1,16 @@
-name: Build and Deploy MkDocs
+name: Deploy and Trigger Docs Build
 
 on:
   push:
     branches:
-      - main
-  repository_dispatch:
-    types: [build_docs]
+      - main  # Or the branch you want to trigger from
 
 permissions:
-  contents: write  # 🔑 Needed to push to gh-pages
+  contents: write  # Required for deploying to gh-pages
 
 jobs:
   deploy:
+    name: Deploy MkDocs Site
     runs-on: ubuntu-latest
 
     steps:
@@ -35,3 +34,16 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./site
+
+  trigger:
+    name: Trigger Docs in New_MkDocs
+    needs: deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger New_MkDocs Repo Build
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          repository: KumarRajan1/New_MkDocs
+          event-type: build_docs
