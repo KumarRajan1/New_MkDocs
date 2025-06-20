@@ -1,5 +1,4 @@
 site_name: My Docs
-site_url: https://KumarRajan1.io/New_MkDocs/
 
 theme:
   name: material
@@ -26,3 +25,5 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+  logo: img/logo.svg
