@@ -69,7 +69,7 @@ lineManager = new LineManager(mapView, mapplsMap, style); // For Polyline
 ### Initialize CircleManager (Circle)
 ##### Java
 ~~~java
- circleManager = new CircleManager(mapView, mapplsMap, style); //For Cirle
+ circleManager = new CircleManager(mapView, mapplsMap, style); //For Cirl
 ~~~
 ##### Kotlin
 ~~~kotlin
