@@ -1,131 +1,72 @@
-<!-- overrides/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Welcome to My Docs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:description" content="My Mappls Interactive Map JavaScript API to render and display Interactive 3D maps with rich POI data, search, routing, navigation, live traffic overlay for web application." />
+  <meta name="keywords" content="interactive map api, Mappls interactive map api, interactive map api documentation, map javascript api documentation, interactive map javascript api, interactive map javascript api documentation, map javascript api documentation" />
+  <meta property="og:image" content="https://about.mappls.com/images/mappls-og.png" />
+  <title>Map API | Android iOS SDKs | iOS SDKS | Mapping & location APIs & SDKs - Mappls</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <h1>🚀 Welcome to My Documentation Site</h1>
-  <p>This is a custom homepage made with plain HTML.</p>
-  <a href="/test/">Go to Documentation</a>
-
-
-  <div className={clsx(styles.allproducts)}>
-    <div className="container">
-      <h1 className="titlehead">Explore all products</h1>
-      <p className={clsx(styles.suhead)}>Browse our guides and examples by product area.</p>
-      <div className="row list_rowBox">
-        <div className="col-md-6 api_sdk_osFcleft">
-          <div className={clsx(styles.api_sdk)}>
-            <h2>Mapping APIs </h2>
-            <ul className='groupList'>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/maps" rel="noreferrer" title="Maps" target="_blank"> <span>
-                  <img src={useBaseUrl('/img/map.svg')} />
-                </span><h5>Maps</h5>
-                  <p>SDKs for maps and traffic</p></Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/search-and-geocoding" rel="noreferrer" title="search_geocoding" target="_blank">  <span>
-                  <img src={useBaseUrl('/img/search_geocoding.svg')} /></span><h5>Search & Geocoding</h5>
-                  <p>APIs for search and discovery</p>
-                </Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/routes-and-navigation" rel="noreferrer" title="routes_navigation" target="_blank">  <span>
-                  <img src={useBaseUrl('/img/routes_navigation.svg')} /></span><h5>Routes & Navigation</h5>
-                  <p>APIs to solve complex routing problems</p>
-                </Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/navigation-sdk" rel="noreferrer" target="_blank" title="realview">
-                  <span><img src={useBaseUrl('/img/navigation_sdk.svg')} /></span><h5>Navigation SDK</h5>
-                  <p>Connected embedded navigation</p>
-                </Link>
-              </li>
-              <li className="listbox">
-
-                <span><img src={useBaseUrl('/img/realview.svg')} /></span><h5>RealView APIs</h5>
-                <p>APIs for 360° panoramic images</p>
-
-              </li>
-            </ul>
-            <h2>Advanced </h2>
-            <ul className='groupList'>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/global-api" rel="noreferrer" target="_blank" title="global_apis">
-                  <span><img src={useBaseUrl('/img/global_apis.svg')} /></span><h5>Global APIs</h5>
-                  <p>Maps, search, routes for 238 nations</p>
-                </Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/corona" rel="noreferrer" title="combat_covid" target="_blank" >
-                  <span><img src={useBaseUrl('/img/combat_covid.svg')} /></span><h5>Combat Covid APIs</h5>
-                  <p>COVID APIs, SDKs, plugins, widgets</p>
-                </Link>
-              </li>
-
-            </ul>
+  <header class="hero--mmi heroBanner">
+    <div class="container">
+      <div class="text--left">
+        <h1 class="titlehead">Documentation</h1>
+        <p>Explore our API references, live demos and samples codes to start integrating MapmyIndia APIs & SDKs.</p>
+      </div>
+      <div class="s_t_l_innersec">
+        <div class="row">
+          <div class="col col--6">
+            <div class="data_se_ar">
+              <h3>Maps</h3>
+              <p class="subtag">SDKs for Maps and Traffic</p>
+              <p>Built on comprehensive map data, MapmyIndia's advanced map SDKs are easy
+                to embed in web and mobile apps across platforms, delivering your users
+                a seamless map experience.</p>
+              <div class="r-m-button">
+                <div class="tag_link">
+                 
+                  <a href="/android/docs/v1.0.12/">Android SDK</a>
+                  <a href="docs/ios/API-Core">iOS SDK</a>
+                  <a href="docs/autosuggest-api">REST APIs</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="col-md-6 api_sdk_osFcRight">
-          <div className={clsx(styles.api_sdk)}>
-            <h2>Analytics APIs</h2>
-            <ul className='groupList'>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/mgis-api" rel="noreferrer" target="_blank" title="GIS & Analytics APIs">
-                  <span>
-                    <img src={useBaseUrl('/img/gis_analytics.svg')} />
-                  </span><h5>GIS & Analytics APIs</h5>
-                  <p>GeoBI meets Location AI</p>
-                </Link>
-              </li>
-              <li className="listbox">
-
-                <span><img src={useBaseUrl('/img/insights.svg')} /></span><h5>Insight</h5>
-                <p>APIs to get insights from raw data</p>
-
-              </li>
-
-            </ul>
-            <h2>Telematics APIs & SDKs</h2>
-            <ul className='groupList'>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/mobility-and-tracking" target="_blank" rel="noreferrer" title="Mobility & Tracking">
-                  <span><img src={useBaseUrl('/img/mobility.svg')} title="Mobility & Tracking" /></span><h5>Mobility & Tracking</h5>
-                  <p>SDK to enable live location in your apps</p>
-                </Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/workmate" target="_blank" rel="noreferrer" title="Workmate APIs">
-                  <span><img src={useBaseUrl('/img/workmate_apis.svg')} /></span><h5>Workmate APIs</h5>
-                  <p>Field force automation APIs</p>
-                </Link>
-              </li>
-            </ul>
-            <h2>MapmyIndia Apps APIs & SDKs</h2>
-            <ul className='groupList'>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/move-api" rel="noreferrer" target="_blank" title="Mappls App">
-                  <span><img src="/img/insights.svg" /></span><h5>Mappls App</h5>
-                  <p>Embed maps, navigation in your apps</p>
-                </Link>
-              </li>
-              <li className="listbox">
-                <Link href="https://about.mappls.com/api/navimaps/" rel="noreferrer" target="_blank" title="NaviMaps SDK APIs">
-                  <span><img src='/img/navimaps.svg' /></span><h5>NaviMaps SDK APIs</h5>
-                  <p>Hybrid navgation for embedded systems</p>
-                </Link>
-              </li>
-
-            </ul>
+          <div class="col col--6">
+            <div class="img_araSec">
+              <div class="map_video_3d">
+                <img src="/img/maps.gif" alt="Map GIF" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </header>
+
+  <!-- Placeholder for homepage features section -->
+  <main>
+    <!-- Insert your "HomepageFeatures" content here if needed -->
+  </main>
+
+  <section id="mmi-r-g-st" class="mmi-Ready-area">
+    <div class="container">
+      <div class="row text-center pb-2">
+        <div class="col col--12">
+          <div class="mmi-txt2">
+            <h2>Ready to get started?</h2>
+            <p>Create an account or talk to our experts</p>
+            <div class="mm-ready">
+              <a href="https://apis.mappls.com/console?process=signup" target="_blank" class="fill">Start for free</a>
+              <a href="https://about.mappls.com/contact" class="outline">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
