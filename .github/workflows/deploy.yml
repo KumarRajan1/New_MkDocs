@@ -3,14 +3,17 @@ name: Build and Deploy MkDocs
 on:
   push:
     branches:
-      - main  # or 'master', depending on your default branch
-  workflow_dispatch:
+      - main
+
+permissions:
+  contents: write  # 🔑 Needed to push to gh-pages
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout main repo
+      - name: Checkout Repo
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -22,13 +25,11 @@ jobs:
         run: |
           pip install mkdocs mkdocs-material
 
-      - name: Fetch docs from other repos
-        run: |
-          chmod +x fetch-docs.sh
-          ./fetch-docs.sh
-        env:
-          GIT_ASKPASS: echo
-          GIT_TERMINAL_PROMPT: 0
+      - name: Build site
+        run: mkdocs build
 
-      - name: Build and Deploy MkDocs
-        run: mkdocs gh-deploy --force
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./site
