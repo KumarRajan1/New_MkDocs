@@ -155,7 +155,7 @@ fillManager?.create(fillOptions)
 ~~~
 
 ### Add a Circle
-Use `CircleOptions` to add the Circle
+Use `CircleOptions` to add the Circl
 ##### Java
 ~~~java
 // Use options to color it red.
