@@ -1,0 +1,34 @@
+name: Build and Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main  # or 'master', depending on your default branch
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Fetch docs from other repos
+        run: |
+          chmod +x fetch-docs.sh
+          ./fetch-docs.sh
+        env:
+          GIT_ASKPASS: echo
+          GIT_TERMINAL_PROMPT: 0
+
+      - name: Build and Deploy MkDocs
+        run: mkdocs gh-deploy --force
