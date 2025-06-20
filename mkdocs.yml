@@ -1,0 +1,27 @@
+site_name: My Docs
+
+theme:
+  name: material
+  custom_dir: docs
+  features:
+    - navigation.instant
+  palette:
+    scheme: default
+  extra_css:
+    - styles/custom.css
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
