@@ -1,0 +1,5 @@
+/* docs/styles/extra.css */
+.md-grid {
+    margin: 0;
+    max-width: 81rem; /* or whatever value you prefer */
+}
