@@ -1,0 +1,97 @@
+---
+title: Home
+description: My Mappls Interactive Map JavaScript API to render and display Interactive 3D maps with rich POI data, search, routing, navigation, live traffic overlay for web application.
+keywords: interactive map api, Mappls interactive map api, interactive map api documentation, map javascript api documentation, interactive map javascript api, interactive map javascript api documentation, map javascript api documentation
+---
+
+<!-- <link rel="stylesheet" href="index.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css">
+
+<header class="hero--mmi heroBanner">
+    <div class="container">
+      <div class="text--left">
+        <h1 class="titlehead">Documentation</h1>
+        <p>Explore our API references, live demos and samples codes to start integrating MapmyIndia APIs & SDKs.</p>
+      </div>
+      <div class="s_t_l_innersec">
+        <div class="row">
+          <div class="col col--6">
+            <div class="data_se_ar">
+              <h3>Maps</h3>
+              <p class="subtag">SDKs for Maps and Traffic</p>
+              <p>Built on comprehensive map data, MapmyIndia's advanced map SDKs are easy
+                to embed in web and mobile apps across platforms, delivering your users
+                a seamless map experience.</p>
+              <div class="r-m-button">
+                <div class="tag_link">
+                  <a href="/android/docs/v1.0.12/">Android SDK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col--6">
+            <div class="img_araSec">
+              <div class="map_video_3d">
+                <img src="/img/maps.gif" alt="Map GIF" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    
+<header class="hero--mmi heroBanner">
+    <div class="container">
+      <div class="text--left">
+        <h1 class="titlehead">Documentation</h1>
+        <p>Explore our API references, live demos and samples codes to start integrating MapmyIndia APIs & SDKs.</p>
+      </div>
+      <div class="s_t_l_innersec">
+        <div class="row">
+          <div class="col col--6">
+            <div class="data_se_ar">
+              <h3>Maps</h3>
+              <p class="subtag">SDKs for Maps and Traffic</p>
+              <p>Built on comprehensive map data, MapmyIndia's advanced map SDKs are easy
+                to embed in web and mobile apps across platforms, delivering your users
+                a seamless map experience.</p>
+              <div class="r-m-button">
+                <div class="tag_link">
+                  <a href="/mappls-web-plugins/directions-plugin/readme/">Web</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col--6">
+            <div class="img_araSec">
+              <div class="map_video_3d">
+                <img src="/img/Dynamic-Search2.gif" alt="Map GIF" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+<main>
+  <!-- Insert your "HomepageFeatures" content here if needed -->
+</main>
+
+<section id="mmi-r-g-st" class="mmi-Ready-area">
+  <div class="container">
+    <div class="row text-center pb-2">
+      <div class="col col--12">
+        <div class="mmi-txt2">
+          <h2>Ready to get started?</h2>
+          <p>Create an account or talk to our experts</p>
+          <div class="mm-ready">
+            <a href="https://apis.mappls.com/console?process=signup" target="_blank" class="fill">Start for free</a>
+            <a href="https://about.mappls.com/contact" class="outline">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,17 +1,10 @@
-site_name: My Docs
+site_name: Mappls Docs
 
 theme:
   name: material
-  custom_dir: docs
+  custom_dir: overrides
   features:
     - navigation.instant
-  palette:
-    scheme: default
-  extra_css:
-    - styles/custom.css
-
-theme:
-  name: material
   palette:
     - scheme: default
       primary: indigo
@@ -25,5 +18,19 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-
   logo: img/logo.svg
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - styles/custom.css
+
+extra_javascript:
+  - js/disable-instant-on-swagger.js
+ 
+  

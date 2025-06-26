@@ -6,3 +6,4 @@ This Plugin is uses to plot Symbol (marker), Line, Fill(Polygon) and circle on a
 
 ### Add the dependency
 Add below dependency in your app-level build.gradle
+

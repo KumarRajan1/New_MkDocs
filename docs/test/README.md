@@ -1,4 +1,3 @@
-# devloper rajan
 [![](https://about.mappls.com/images/mappls-b-logo.svg) ](https://www.mapmyindia.com/api)
 
 # Mappls Annotation Plugin
