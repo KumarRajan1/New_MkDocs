@@ -32,5 +32,6 @@ extra_css:
 
 extra_javascript:
   - js/disable-instant-on-swagger.js
+  - js/hide-sidebar.js
  
   
